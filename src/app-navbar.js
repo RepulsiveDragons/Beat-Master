@@ -32,9 +32,6 @@ nav{
     Leaderboard
     </a>
 
-    <a class="navbar-item is-hoverable" href="documentation.html" id="documentation-page">
-      Documentation
-    </a>
   </div> <!-- end navbar-start -->
 </div>
 </nav> 
