@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <script type="module" src="src/init.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles/defaultStyles.css">
+    <script type="module" src="src/firebase.js"></script>
+    <title>Leaderboard</title>
+</head>
+<body>
+    <app-navbar data-currentpage="high-scores-page"> </app-navbar>
+	
+    <main>
+        <div class="has-background-black-bis mr-1 p-1"> 
+          <div class="is-large p-4">
+
+            <app-header>
+              <span slot="my-title">All Time High Scores</span>
+              <span slot="my-subtitle">Enter your name and click the button to submit your highest score.</span>
+            </app-header>
+            
+            <div id="showHiScore" class="content has-text-centered has-text-success">Your Highest Score:???</div>
+
+            <div class="controls has-background-black-bis has-text-centered mt-6">
+
+                <input id="name-input" class="input column-is-quarter" type="text" placeholder="Input Name Here">
+
+                <button
+                  id="submit-high-score"
+                  class="button column-is-quarter is-primary is-medium"
+                  title="Submit score"
+                >Submit</button>
+              
+            </div>
+
+            <div id="hidden" class="content has-text-centered has-text-success">Score Submitted!</div>
+      
+
+            <div class="box has-background-dark"> 
+                <div class="content">
+                    <ol id="high-score-content"></ol>
+                </div>
+            </div>
+          </div>
+
+          <app-footer>
+            <span slot="my-footer"><span>&copy;</span>2022 Jiabao Su, RIT</span>
+          </app-footer>
+        </div>
+      </main>
+</body>
+</html>

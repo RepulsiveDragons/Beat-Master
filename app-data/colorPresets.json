@@ -1,0 +1,26 @@
+{
+	"title" : "Color Presets for Audio Visualizer",
+	"presets" : [
+		{
+			"title" : "Flame",
+            "rgba": "rgba(227, 96, 46, 0.7)"
+		},
+		{
+			"title" : "Lime",
+			"rgba" : "rgba(109, 237, 30, 0.7)"
+		},
+		{
+			"title" : "Electric Blue",
+			"rgba" : "rgba(15, 237, 253, 0.7)"
+		},
+		{
+			"title" : "Orchid",
+			"rgba" : "rgba(214, 110, 223, 0.7)"
+		},
+		{
+			"title" : "Laser Lemon",
+			"rgba" : "rgba(255, 255, 88, 0.7)"
+		}
+	]
+
+}
